@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AplikasiGithubSubmission2</string>
+    <string name="usertype">Type</string>
+    <string name="username">Username</string>
+    <string name="search">Pencarian</string>
+    <string name="search_hint">Siapa yang ingin anda cari?</string>
+    <string name="location">Location</string>
+    <string name="company">Company</string>
+    <string name="repository">Repository</string>
+    <string name="tab_follower">Follower</string>
+    <string name="tab_following">Following</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test">test</string>
+    <string name="userrealname">RealName</string>
+    <string name="following">Following</string>
+    <string name="follower">Follower</string>
+</resources>
