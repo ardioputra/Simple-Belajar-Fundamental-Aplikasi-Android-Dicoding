@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    app:iconSpaceReserved="false">
+
+    <SwitchPreference
+        android:key="@string/key_switch"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/desswitch"
+        android:title="@string/switchon"
+        app:iconSpaceReserved="false" />
+
+</PreferenceScreen>

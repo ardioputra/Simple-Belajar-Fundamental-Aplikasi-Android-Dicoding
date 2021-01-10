@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.githubapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <permission android:name="com.example.githubapplication.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="com.example.githubapplication.WRITE_DATABASE" android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GithubApplication">
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.FavActivitiy" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.MainActivity">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".provider.FavProvider"
+            android:authorities="com.example.githubapplication"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.githubapplication.READ_DATABASE"
+            android:writePermission="com.example.githubapplication.WRITE_DATABASE" />
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+
+</manifest>
